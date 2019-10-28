@@ -1,5 +1,5 @@
 %define     main_version  4.0
-%define     minor_version 4
+%define     minor_version 12
 %define     module_dir    src/modules
 
 Name:       zabbix-agent-sockstat
@@ -25,7 +25,7 @@ Requires(post): /sbin/service
 
 
 %description
-Agent module to parse the /proc/net/sockstat info for Zabbix > 2.2.x agent.
+Agent module to parse the /proc/net/sockstat info for Zabbix 4.0.x agent.
 Info: https://github.com/vicendominguez/sockstat-zabbix-module
 
 %prep
@@ -71,7 +71,10 @@ rm -rf %{buildroot}
 %endif
 
 %changelog
-* Fri Feb 8  2019 Anatolii Vorona <vorona.tolik@gmail.com>    - 3.4
+* Mon Oct 28 2019 Anatolii Vorona <vorona.tolik@gmail.com>   - 4.0
+- Bump version 4.0.12
+
+* Fri Feb 8 2019 Anatolii Vorona <vorona.tolik@gmail.com>    - 3.4
 - Updated spec for EPEL7 and systemd
 
 * Tue Jan 28 2014 Vicente Dominguez <twitter:@vicendominguez> - 2.00
