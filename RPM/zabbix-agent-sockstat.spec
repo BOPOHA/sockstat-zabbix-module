@@ -4,7 +4,7 @@
 
 Name:       zabbix-agent-sockstat
 Version:    %{main_version}.%{minor_version}
-Release:    1%{?dist}
+Release:    8%{?dist}
 Summary:    Agent module for zabbix for network sockets status
 
 Group:      Applications/Internet
